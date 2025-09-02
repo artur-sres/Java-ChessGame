@@ -7,7 +7,7 @@ public class Board {
     private Piece[][] pieces;
 
     //Constructor
-    private Board(int rows, int columns) {
+    public Board(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
         pieces = new Piece[rows][columns];
@@ -36,7 +36,7 @@ public class Board {
 
     //Places a piece on the board
     public void placePiece(Piece piece, Position position) {
-        if(!thereisAPiece(position)) {
+        if(thereisAPiece(position)) {
             throw new BoardException("Ja existe uma peça na posição " + position);
         }
         pieces[position.getRow()][position.getColumn()] = piece;

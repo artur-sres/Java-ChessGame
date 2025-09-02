@@ -6,7 +6,7 @@ import boardgame.Piece;
 
 public abstract class ChessPiece extends Piece{
     //Attributes
-    Private Color color;
+    private Color color;
 
     //Constructor
     public ChessPiece(Board board, Color color) {
