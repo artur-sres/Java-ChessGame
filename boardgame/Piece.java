@@ -8,6 +8,4 @@ public abstract class Piece {
         this.board = board;
         position = null;
     }
-
-
 }
